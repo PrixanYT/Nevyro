@@ -5,11 +5,11 @@ module.exports = async (client, ready) => {
         setInterval(async () => {
       const statuslist = [
         `Prefix .`,
-        `Version du bot: 2.6`,
+        `Version du bot: 2.7`,
         `${client.guilds.size} serveur`,
         `${client.users.size} membres`,
-        `By Voltan#0212`,
-        `Mise a jour le 30 aout 21:18`
+        `Merci de partager le bot ❤`,
+        `Mise a jour le 19 avril à 22h10`
       ];
       const random = Math.floor(Math.random() * statuslist.length);
       
@@ -23,6 +23,6 @@ module.exports = async (client, ready) => {
       } catch (error) {
         console.error(error);
       }
-      }, 60000);
+      }, 90000);
 
 }
