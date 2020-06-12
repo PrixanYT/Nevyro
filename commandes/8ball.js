@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 module.exports.run = async (client, message, ops, args) => {
    message.delete()
    if (!args[0]) return message.reply("**Entrez une question !** :x:")
-    let replies = ["Ouai", "Nop", "Nul", "Tes fou", "C'est possible", "Pas du tout", "Sûrement pas", "C'est logique", "Bah oui", "C'est pas le cas", "Ta fait pipi dans ta tête", "Tes un rousseau", "Ne me parle pas tout de suite", "La ferme"]
+    let replies = ["Oui", "Non", "Je ne pense pas", "Tu es fou", "C'est possible", "Pas du tout", "Sûrement pas", "C'est logique", "Bah ouai", "C'est pas le cas", "Ta fait pipi dans ta tête", "Je suis fatigué pour répondre à cette question", "Ne me parle pas tout de suite", "Je suis fatigué pour te répondre à cette question", "Change de disque","Arrête de me poser toujour la même question", "Un autre jour"]
     let question = args.slice(0).join(" ");
     let res = Math.floor((Math.random() * replies.length));
 

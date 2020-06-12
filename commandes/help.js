@@ -204,7 +204,8 @@ module.exports.run = (client, message, ops, args) => {
               .setTitle("**Page d'aide**")
               .setDescription(
 `Les élements **<>** sont facultatifs
-Tu comprend pas une commande ? Fait **.help <Nom de la commande>** (Il n'y pas de help pour toute les commandes)`)
+Tu comprend pas une commande ? Fait **.help <Nom de la commande>** (Il n'y pas de help pour toute les commandes)
+Toutes les commandes risque de ne pas fonctionner, veuillez patientez la prochaine MAJ`)
               .setColor("RANDOM")
 	          .addField("🔓 Modération","``ban, kick, mute, tempmute, unmute, clear, poll, memberc, addrole, removerole, crole, annonce, afk, unafk``")
               .addField("📱 Utile","``info, serverinfo, userinfo, report, ping, sugg, invite``")
@@ -215,7 +216,6 @@ Tu comprend pas une commande ? Fait **.help <Nom de la commande>** (Il n'y pas d
               .addField("🎵 Musique","``play, playing, resume, pause, volume, queue, clearqueue, skip, search, join, leave``")
               .setFooter(`Demandé par ${message.author.username}`, message.author.avatarURL)
           message.channel.send(help)
-          console.log(`Commande help exécuté par ${message.author.username}`)
     }
 }
 
